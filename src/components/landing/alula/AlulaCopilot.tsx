@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { 
-  Calendar, CheckSquare, MessageSquare, ArrowRight, 
-  Clock, ShieldCheck, RefreshCw, Zap, CheckCircle2, CornerDownLeft, 
-  ListTodo, Layers, Send, Sparkles, Mic, FileText, ChevronRight,
-  AlertCircle, BookOpen, Check, Play, Volume2
+import {
+  Calendar, CheckSquare, MessageSquare, Zap, CheckCircle2,
+  Layers, Sparkles, Mic, FileText, ChevronRight, BookOpen
 } from 'lucide-react';
 
 export type CopilotDeckVariant = 'console' | 'workspace' | 'cockpit';
@@ -16,8 +14,6 @@ interface AlulaCopilotProps {
 
 export const AlulaCopilot: React.FC<AlulaCopilotProps> = React.memo(({ 
   initialVariant = 'console',
-  onNavigateApp,
-  onOpenAuth 
 }) => {
   const [variant, setVariant] = useState<CopilotDeckVariant>(() => {
     if (typeof window !== 'undefined') {

@@ -670,7 +670,7 @@ export function App() {
                       ...prev,
                       title: session.title,
                       subject: session.subject,
-                      room: session.room,
+                      room: session.room ?? prev.room,
                       time: `${session.start} (${session.duration} min)`,
                     }
                   : null

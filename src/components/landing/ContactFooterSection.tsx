@@ -15,9 +15,7 @@ const SOCIAL_LINKS = [
   { label: 'GitHub', href: 'https://github.com' },
 ];
 
-export const ContactFooterSection: React.FC<ContactFooterSectionProps> = ({
-  onNavigateApp,
-}) => {
+export const ContactFooterSection: React.FC<ContactFooterSectionProps> = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const marqueeRef = useRef<HTMLDivElement>(null);
 

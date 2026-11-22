@@ -16,7 +16,6 @@ const NAV_LINKS = ['Home', 'Work', 'Resume'];
 export const HeroSection: React.FC<HeroSectionProps> = ({
   onNavigateWork,
   onNavigateContact,
-  onNavigateApp,
 }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const heroContainerRef = useRef<HTMLDivElement>(null);

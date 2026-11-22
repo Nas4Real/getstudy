@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Sparkles, Award, Shield, CheckCircle2, ArrowRight, User } from 'lucide-react';
+import { Sparkles, Shield, CheckCircle2 } from 'lucide-react';
 
 interface HumanAiChangingProps {
   onNavigateApp?: () => void;
 }
 
-export const HumanAiChanging: React.FC<HumanAiChangingProps> = ({ onNavigateApp }) => {
+export const HumanAiChanging: React.FC<HumanAiChangingProps> = () => {
   const [activeTab, setActiveTab] = useState<number>(0);
 
   const tabs = [

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Plus, Check, Boxes, Terminal } from 'lucide-react';
+import { Check, Boxes } from 'lucide-react';
 
 interface HumanAiAdventureProps {
   onNavigateApp?: () => void;

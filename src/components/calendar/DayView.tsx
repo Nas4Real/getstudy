@@ -358,15 +358,12 @@ export const DayView: React.FC<DayViewProps> = ({
   onOpenNewSession,
   mockState = 'normal',
   periodOffset,
-  onPrevDay,
-  onNextDay,
-  onSelectDayOffset,
 }) => {
   const [quickNote, setQuickNote] = useState(
     '• Bring lab booklet & scientific calculator for TD 21\n• Ask Prof. Schwartz about convergence of sum(1/n log n)\n• Review endomorphism reduction notes before 14:00'
   );
   const [copied, setCopied] = useState(false);
-  const [fallbackOffset, setFallbackOffset] = useState(0);
+  const [fallbackOffset] = useState(0);
   const activeDayOffset = periodOffset ?? fallbackOffset;
   const dayMeta = getDayMetadata(activeDayOffset);
   const isToday = activeDayOffset === 0;

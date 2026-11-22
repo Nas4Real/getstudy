@@ -5,10 +5,7 @@ interface AlulaFeaturesProps {
   onOpenAuth?: (mode: 'signin' | 'signup') => void;
 }
 
-export const AlulaFeatures: React.FC<AlulaFeaturesProps> = React.memo(({ 
-  onNavigateApp,
-  onOpenAuth 
-}) => {
+export const AlulaFeatures: React.FC<AlulaFeaturesProps> = React.memo(() => {
   return (
     <section
       id="features"
